@@ -13,8 +13,16 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
+            <button id="aboutBtn" class="about-btn" aria-label="About Owner">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+            </button>
             <div class="header-content">
                 <h1>🇮🇳 Indian Constitution Chatbot</h1>
+                <p class="subtitle">by Abhay Singh Chauhan</p>
                 <p>Ask me anything about the Constitution of India</p>
             </div>
         </div>
@@ -52,6 +60,31 @@
                         </svg>
                     </button>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <span>AS</span>
+                </div>
+                <h2>Abhay Singh Chauhan</h2>
+                <p class="role">Full Stack Developer & AI Engineer</p>
+            </div>
+            <div class="profile-body">
+                <p>Passionate about building intelligent applications that bridge the gap between technology and users.</p>
+                <a href="https://meet-abhay.vercel.app/" target="_blank" class="portfolio-btn">
+                    Visit Portfolio
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>

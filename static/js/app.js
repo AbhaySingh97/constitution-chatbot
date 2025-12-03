@@ -3,6 +3,9 @@ const chatMessages = document.getElementById('chatMessages');
 const userInput = document.getElementById('userInput');
 const sendButton = document.getElementById('sendButton');
 const quickRepliesContainer = document.getElementById('quickReplies');
+const aboutBtn = document.getElementById('aboutBtn');
+const aboutModal = document.getElementById('aboutModal');
+const closeModalBtn = document.querySelector('.close-modal');
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,6 +19,21 @@ function setupEventListeners() {
     userInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
             sendMessage();
+        }
+    });
+
+    // About Modal Events
+    aboutBtn.addEventListener('click', () => {
+        aboutModal.classList.add('active');
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+        aboutModal.classList.remove('active');
+    });
+
+    aboutModal.addEventListener('click', (e) => {
+        if (e.target === aboutModal) {
+            aboutModal.classList.remove('active');
         }
     });
 }
@@ -38,6 +56,17 @@ async function loadQuickReplies() {
                 });
                 quickRepliesContainer.appendChild(button);
             });
+
+            // Add close button
+            const closeBtn = document.createElement('button');
+            closeBtn.className = 'close-replies-btn';
+            closeBtn.innerHTML = '&times;';
+            closeBtn.setAttribute('aria-label', 'Close suggestions');
+            closeBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                quickRepliesContainer.classList.add('hidden');
+            });
+            quickRepliesContainer.appendChild(closeBtn);
         }
     } catch (error) {
         console.error('Error loading quick replies:', error);
@@ -91,7 +120,8 @@ async function sendMessage() {
     } finally {
         // Re-enable send button
         sendButton.disabled = false;
-        userInput.focus();
+        // Blur input to close keyboard on mobile
+        userInput.blur();
     }
 }
 
@@ -168,4 +198,7 @@ function removeTypingIndicator(id) {
 }
 
 // Focus input on load
-userInput.focus();
+// Focus input on load only for desktop
+if (window.innerWidth > 768) {
+    userInput.focus();
+}
