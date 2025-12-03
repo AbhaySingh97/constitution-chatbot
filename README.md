@@ -10,6 +10,8 @@ A comprehensive AI-powered chatbot providing detailed information about the Indi
 - **Smart Search** with keyword matching and contextual fallbacks
 - **Interactive UI** with quick reply suggestions
 - **Comprehensive Coverage** of Fundamental Rights, DPSP, Fundamental Duties, and more
+- **📱 Fully Responsive Design** - Optimized for mobile phones, tablets, and desktops
+- **🔒 Secure & Production-Ready** - No hardcoded credentials, safe for public deployment
 
 ## Database Statistics
 
@@ -26,6 +28,24 @@ A comprehensive AI-powered chatbot providing detailed information about the Indi
 - **Frontend**: HTML, CSS, JavaScript
 - **Database**: JSON-based knowledge base
 - **Deployment**: Gunicorn WSGI server
+
+## 📱 Mobile Responsiveness
+
+This chatbot is **fully responsive** and optimized for all devices:
+
+- **📱 Mobile Phones** (320px - 480px): Optimized layout with touch-friendly buttons
+- **📱 Tablets** (768px - 1024px): Balanced design for medium screens
+- **💻 Desktops** (1025px+): Full-featured experience
+
+### Mobile Features:
+- ✅ Touch-optimized buttons (minimum 44px tap targets)
+- ✅ Responsive typography that scales with screen size
+- ✅ No horizontal scrolling on any device
+- ✅ Mobile keyboard-friendly input area
+- ✅ Dynamic chat height that adapts to viewport
+- ✅ Smooth scrolling and animations
+
+**Test on mobile**: See [MOBILE_TESTING.md](MOBILE_TESTING.md) for detailed testing instructions.
 
 ## Local Development
 
@@ -143,6 +163,26 @@ Contributions are welcome! To add more articles, procedures, or cases:
 1. Edit `data/constitution_data.json`
 2. Follow the existing JSON structure
 3. Test locally before deploying
+
+## 🔒 Security
+
+This project is **secure and ready for public deployment**:
+
+- ✅ No hardcoded API keys or credentials
+- ✅ No personal information in codebase
+- ✅ Proper `.gitignore` configuration
+- ✅ Environment variables template (`.env.example`)
+- ✅ All constitutional data is public domain
+
+**Security Audit**: See [SECURITY_CHECK.md](SECURITY_CHECK.md) for detailed security verification.
+
+## 📚 Documentation
+
+- **[MOBILE_TESTING.md](MOBILE_TESTING.md)** - Mobile responsive design testing guide
+- **[SECURITY_CHECK.md](SECURITY_CHECK.md)** - Security audit and checklist
+- **[DEPLOY_MOBILE_READY.md](DEPLOY_MOBILE_READY.md)** - Deployment checklist
+- **[MOBILE_RESPONSIVE_SUMMARY.md](MOBILE_RESPONSIVE_SUMMARY.md)** - Summary of responsive changes
+
 
 ## License
 
