@@ -43,7 +43,7 @@ Your chatbot is now **100% production-ready** for deployment on:
 
 1. **Create GitHub Repository**
    ```bash
-   cd "c:\Users\User\OneDrive\Desktop\FULL STACK\NLM MODEL\constitution-chatbot"
+   cd constitution-chatbot
    git init
    git add .
    git commit -m "Constitution Chatbot - Ready for deployment"

@@ -9,7 +9,7 @@ Railway is the easiest platform to deploy your Constitution Chatbot. Follow thes
 ## Step 1: Initialize Git Repository
 
 ```bash
-cd "c:\Users\User\OneDrive\Desktop\FULL STACK\NLM MODEL\constitution-chatbot"
+cd constitution-chatbot
 git init
 git add .
 git commit -m "Constitution Chatbot - Railway deployment"
@@ -23,7 +23,7 @@ git commit -m "Constitution Chatbot - Railway deployment"
 1. Download and install [GitHub Desktop](https://desktop.github.com/)
 2. Open GitHub Desktop
 3. File → Add Local Repository
-4. Select: `c:\Users\User\OneDrive\Desktop\FULL STACK\NLM MODEL\constitution-chatbot`
+4. Select your `constitution-chatbot` folder
 5. Click "Publish repository"
 6. Name: `constitution-chatbot`
 7. Click "Publish repository"

@@ -6,7 +6,7 @@
 
 1. **Create GitHub Repository**
    ```bash
-   cd "c:\Users\User\OneDrive\Desktop\FULL STACK\NLM MODEL\constitution-chatbot"
+   cd constitution-chatbot
    git init
    git add .
    git commit -m "Initial commit - Constitution Chatbot"
@@ -56,7 +56,7 @@
 
 3. **Deploy**
    ```bash
-   cd "c:\Users\User\OneDrive\Desktop\FULL STACK\NLM MODEL\constitution-chatbot"
+   cd constitution-chatbot
    vercel
    ```
    - Follow the prompts
@@ -70,7 +70,7 @@
 2. **Login and Create App**
    ```bash
    heroku login
-   cd "c:\Users\User\OneDrive\Desktop\FULL STACK\NLM MODEL\constitution-chatbot"
+   cd constitution-chatbot
    heroku create constitution-chatbot-india
    ```
 
